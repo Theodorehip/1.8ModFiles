@@ -1,0 +1,212 @@
+itemGroup.tabMillstone=Millstone Main
+itemGroup.tabMillstoneTools=Millstone Tools
+itemGroup.tabMillstoneArmor=Millstone Armors
+itemGroup.tabMillstoneMaterials=Millstone Materials
+itemGroup.tabMillstoneFood=Millstone Food
+itemGroup.tabMillstoneMisc=Millstone Miscellaneous
+itemGroup.tabMillstoneDeco=Millstone Decorations
+
+entity.Scarecrow.name=Scarecrow
+entity.Boar.name=Boar
+
+item.rock.name=Rock
+item.straw.name=Straw
+item.woodGear.name=Wooden Gear
+item.stoneGear.name=Stone Gear
+item.ironGear.name=Iron Gear
+item.goldGear.name=Golden Gear
+item.diamondGear.name=Diamond Gear
+item.flour.name=Flour
+item.stoneDust.name=Stone Dust
+item.goldDust.name=Gold Dust
+item.ironDust.name=Iron Dust
+item.ObsidianDust.name=Obsidian Dust
+item.obsidianSword.name=Obsidian Sword
+item.obsidianHoe.name=Obsidian Hoe
+item.obsidianAxe.name=Obsidian Axe
+item.obsidianPickaxe.name=Obsidian Pickaxe
+item.obsidianShovel.name=Obsidian Shovel
+
+item.copperSword.name=Copper Sword
+item.copperHoe.name=Copper Hoe
+item.copperAxe.name=Copper Axe
+item.copperPickaxe.name=Copper Pickaxe
+item.copperShovel.name=Copper Shovel
+
+item.ironSword.name=Iron Sword
+item.ironHoe.name=Iron Hoe
+item.ironAxe.name=Iron Axe
+item.ironPickaxe.name=Iron Pickaxe
+item.ironShovel.name=Iron Shovel
+
+item.rubySword.name=Ruby Sword
+item.rubyHoe.name=Ruby Hoe
+item.rubyAxe.name=Ruby Axe
+item.rubyPickaxe.name=Ruby Pickaxe
+item.rubyShovel.name=Ruby Shovel
+
+item.emeraldSword.name=Emerald Sword
+item.emeraldHoe.name=Emerald Hoe
+item.emeraldAxe.name=Emerald Axe
+item.emeraldPickaxe.name=Emerald Pickaxe
+item.emeraldShovel.name=Emerald Shovel
+
+item.sapphireSword.name=Sapphire Sword
+item.sapphireHoe.name=Sapphire Hoe
+item.sapphireAxe.name=Sapphire Axe
+item.sapphirePickaxe.name=Sapphire Pickaxe
+item.sapphireShovel.name=Sapphire Shovel
+
+item.riceCrop.name=Rice
+item.riceSeeds.name=Rice Seeds
+item.riceBowl.name=Bowl of Rice
+
+item.bonePickaxe.name=Bone Pickaxe
+item.boneShard.name=Bone Shard
+item.flintKnife.name=Flint Knife
+item.flintHatchet.name=Flint Hatchet
+
+item.tomato.name=Tomato
+item.tomatoPlant.name=Tomato Plant
+item.tomatoSeeds.name=Tomato Seeds
+
+item.cotton.name=Cotton
+item.cottonPlant.name=Cotton Plant
+item.cottonSeeds.name=Cotton Seeds
+
+item.flax.name=Flax
+item.flaxPlant.name=Flax Plant
+item.flaxSeeds.name=Flax Seeds
+
+item.sushi.name=Sushi Roll
+item.ricePaper.name=Rice Paper
+item.copperDust.name=Copper Dust
+item.copperIngot.name=Copper Ingot
+item.ruby.name=Ruby
+item.sapphire.name=Sapphire
+item.silverDust.name=Silver Dust
+item.silverIngot.name=Silver Ingot
+item.ironRod.name=Iron Rod
+item.rottenArrow.name=Rotten Arrow
+item.grenade.name=Holy Hand Grenade
+
+item.boneShard.name=Bone Shard
+item.leatherStrip.name=Leather Strip
+item.ironNugget.name=Iron Nugget
+
+item.ObsidianHelm.name=Obsidian Helmet
+item.ObsidianChest.name=Obsidian Chestplate
+item.ObsidianLegs.name=Obsidian Leggings
+item.ObsidianBoots.name=Obsidian Boots
+
+item.EmeraldHelm.name=Emerald Helmet
+item.EmeraldChest.name=Emerald Chestplate
+item.EmeraldLegs.name=Emerald Leggings
+item.EmeraldBoots.name=Emerald Boots
+
+item.CopperHelm.name=Copper Helmet
+item.CopperChest.name=Copper Chestplate
+item.CopperLegs.name=Copper Leggings
+item.CopperBoots.name=Copper Boots
+
+item.RubyHelm.name=Ruby Helmet
+item.RubyChest.name=Ruby Chestplate
+item.RubyLegs.name=Ruby Leggings
+item.RubyBoots.name=Ruby Boots
+
+item.SapphireHelm.name=Sapphire Helmet
+item.SapphireChest.name=Sapphire Chestplate
+item.SapphireLegs.name=Sapphire Leggings
+item.SapphireBoots.name=Sapphire Boots
+
+
+
+tile.millstoneIdle.name=Grindstone
+tile.stoneCutter.name=Stone Cutter
+tile.obsidianBlock.name=Refined Obsidian
+tile.ricePlant.name=Rice Plant
+tile.lantern.name=Paper Lantern
+tile.copperOre.name=Copper Ore
+tile.sapphireOre.name=Sapphire Ore
+tile.netherRubyOre.name=Nether Ruby Ore
+tile.silverOre.name=Silver Ore
+tile.lavaBrick.name=Lava Brick
+tile.Firerack.name=Firerack
+tile.Halite.name=Halite
+tile.Jade.name=Jade
+
+tile.sandstoneWall.name=Sandstone Wall
+tile.brickWall.name=Brick Wall
+tile.stoneBrickWall.name=Stonebrick Wall
+
+tile.willowStairs.name=Willow Stairs
+tile.palmStairs.name=Palm Stairs
+tile.dreadwoodStairs.name=Dreadwood Stairs
+tile.redwoodStairs.name=Redwood Stairs
+tile.applewoodStairs.name=Applewood Stairs
+tile.cherryStairs.name=Cherry Stairs
+tile.baobabStairs.name=Baobab Stairs
+
+tile.planks.name=Wooden Planks
+tile.planks_willow.name=Willow Wood Planks
+tile.planks_palm.name=Palm Wood Planks
+tile.planks_dreadwood.name=Dreadwood Planks
+tile.planks_redwood.name=Redwood Planks
+tile.planks_applewood.name=Applewood Planks
+tile.planks_cherry.name=Cherry Wood Planks
+tile.planks_baobab.name=Baobab Wood Planks
+
+tile.log.name=Log
+tile.log.willow.name=Willow Wood 
+tile.log.palm.name=Palm Wood 
+tile.log.dreadwood.name=Dreadwood 
+tile.log.redwood.name=Redwood 
+tile.log.applewood.name=Applewood 
+tile.log.cherry.name=Cherry Wood 
+tile.log.baobab.name=Baobab Wood 
+
+tile.leaf.name=Leaves
+tile.leaf.willow.name=Willow Leaves
+tile.leaf.palm.name=Palm Leaves
+tile.leaf.dreadwood.name=Dreadwood Leaves 
+tile.leaf.redwood.name=Redwood Leaves
+tile.leaf.applewood.name=Applewood Leaves
+tile.leaf.cherry.name=Cherry Leaves
+tile.leaf.baobab.name=Baobab Leaves
+
+tile.slab.name=Wooden Slab
+tile.slab.willow.name=Willow Slab
+tile.slab.palm.name=Palm Slab
+tile.slab.dreadwood.name=Dreadwood Slab 
+tile.slab.redwood.name=Redwood Slab
+tile.slab.applewood.name=Applewood Slab
+tile.slab.cherry.name=Cherry Slab
+tile.slab.baobab.name=Baobab Slab
+
+tile.sapling.name=Leaves
+tile.sapling.willow.name=Willow Sapling
+tile.sapling.palm.name=Palm Sapling
+tile.sapling.dreadwood.name=Dreadwood Sapling 
+tile.sapling.redwood.name=Redwood Sapling
+tile.sapling.applewood.name=Applewood Sapling
+tile.sapling.cherry.name=Cherry Sapling
+tile.sapling.baobab.name=Baobab Sapling
+
+item.coloredBed.black.name=Black Bed
+item.coloredBed.red.name=Red Bed
+item.coloredBed.green.name=Green Bed
+item.coloredBed.brown.name=Brown Bed
+item.coloredBed.blue.name=Blue Bed
+item.coloredBed.purple.name=Purple Bed
+item.coloredBed.cyan.name=Cyan Bed
+item.coloredBed.silver.name=Silver Bed
+item.coloredBed.gray.name=Gray Bed
+item.coloredBed.pink.name=Pink Bed
+item.coloredBed.lime.name=Lime Bed
+item.coloredBed.yellow.name=Yellow Bed
+item.coloredBed.light_blue.name=Light Blue Bed
+item.coloredBed.magenta.name=Magenta Bed
+item.coloredBed.orange.name=Orange Bed
+item.coloredBed.white.name=White Bed
+
+
