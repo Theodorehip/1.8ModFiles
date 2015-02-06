@@ -15,7 +15,7 @@ public class tabAdventurePlusMisc extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return ItemRegistry.boneShard;
 		//return ItemRegistry.ironGear;
 	}
 }

@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.adventureplus.registry.BlockRegistry;
+import com.adventureplus.registry.ItemRegistry;
 
 public class tabAdventurePlus extends CreativeTabs{
 	
@@ -14,7 +15,7 @@ public class tabAdventurePlus extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return ItemRegistry.boneShard;
 		//return Item.getItemFromBlock(BlockRegistry.millstoneIdle);
 	}
 }

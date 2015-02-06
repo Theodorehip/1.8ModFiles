@@ -16,10 +16,10 @@ public class ChestGenRegistry {
 		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.obsidianHoe, 0 , 1, 1, 1));
 		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.obsidianSword, 0 , 1, 1, 1));
 		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.obsidianShovel, 0 , 1, 1, 1));
-		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianHelm, 0 , 1, 1, 1));
-		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianChest, 0 , 1, 1, 1));
-		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianLegs, 0 , 1, 1, 1));
-		//ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianBoots, 0 , 1, 1, 1));
+		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianHelm, 0 , 1, 1, 1));
+		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianChest, 0 , 1, 1, 1));
+		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianLegs, 0 , 1, 1, 1));
+		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(ItemRegistry.armorObsidianBoots, 0 , 1, 1, 1));
 	}
 
 }

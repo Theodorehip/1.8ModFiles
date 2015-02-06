@@ -14,7 +14,7 @@ public class tabAdventurePlusMaterials extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return ItemRegistry.boneShard;
 		//return ItemRegistry.obsidianDust;
 	}
 }

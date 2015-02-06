@@ -42,11 +42,10 @@ public class AdventurePlusMod {
 	public static AdventurePlusMod instance;
 	
 	
-	
 	//Proxy Stuff
 	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
 	public static CommonProxy proxy;
-		
+	
 	
 	//AdventurePlus CreativeTabs
 	public static CreativeTabs tabAdventurePlus = new tabAdventurePlus(CreativeTabs.getNextID(), "tabAdventurePlus");
@@ -112,7 +111,7 @@ public class AdventurePlusMod {
   	    RecipeRegistry.RegisterSmelting();
   		
   	    
-  		logger.info("Stuffs");
+  		logger.info("Render Entitys");
   		//Tile Entity Registry
   		//GameRegistry.registerTileEntity(TileEntityMillstone.class, "tileEntityMillstone");
   		//EntityRegistry.registerModEntity(EntityGrenade.class, "Grenade", 4, this, 80, 3, true);

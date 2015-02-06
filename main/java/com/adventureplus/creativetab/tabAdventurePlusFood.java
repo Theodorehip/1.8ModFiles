@@ -17,7 +17,7 @@ public class tabAdventurePlusFood extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return ItemRegistry.boneShard;
 		//return ItemRegistry.tomato;
 	}
 }

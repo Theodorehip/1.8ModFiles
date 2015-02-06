@@ -1,10 +1,10 @@
 [
 {
-  "modid": "millstonemod",
-  "name": "Millstone Mod",
+  "modid": "adventureplusmod",
+  "name": "AdventurePlus Mod",
   "description": "Add tons of stuffs! And make minecraft more interesting!",
-  "version": "0.0.6",
-  "mcversion": "1.7.10",
+  "version": "0.1",
+  "mcversion": "1.8",
   "logoFile": "",
   "url": "",
   "updateUrl": "",

@@ -10,11 +10,12 @@ import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.adventureplus.AdventurePlusMod;
-import com.adventureplus.armor.CopperArmor;
-import com.adventureplus.armor.RubyArmor;
-import com.adventureplus.armor.SapphireArmor;
-import com.adventureplus.armor.EmeraldArmor;
-import com.adventureplus.armor.ObsidianArmor;
+import com.adventureplus.lib.References;
+import com.adventureplus.armor.*;
+import com.adventureplus.items.*;
+
+//import com.adventureplus.tools.*;
+//import com.adventureplus.blocks.*;
 
 /*
 import com.millstone.armor.CopperArmor;
@@ -27,33 +28,6 @@ import com.millstone.blocks.crops.CottonPlant;
 import com.millstone.blocks.crops.FlaxPlant;
 import com.millstone.blocks.crops.RicePlant;
 import com.millstone.blocks.crops.TomatoPlant;
-import com.millstone.items.BoneShard;
-import com.millstone.items.CopperDust;
-import com.millstone.items.CopperIngot;
-import com.millstone.items.Cotton;
-import com.millstone.items.Flax;
-import com.millstone.items.Flour;
-import com.millstone.items.GoldDust;
-import com.millstone.items.IronDust;
-import com.millstone.items.IronNugget;
-import com.millstone.items.IronRod;
-import com.millstone.items.ItemGrenade;
-import com.millstone.items.LeatherStrip;
-import com.millstone.items.ObsidianDust;
-import com.millstone.items.RawHide;
-import com.millstone.items.RiceBowl;
-import com.millstone.items.RicePaper;
-import com.millstone.items.Rock;
-import com.millstone.items.Ruby;
-import com.millstone.items.Sapphire;
-import com.millstone.items.SilverDust;
-import com.millstone.items.SilverIngot;
-import com.millstone.items.StoneDust;
-import com.millstone.items.Straw;
-import com.millstone.items.Tomato;
-import com.millstone.items.rottenArrow;
-import com.millstone.items.sushi;
-import com.millstone.lib.References;
 import com.millstone.tools.BonePickaxe;
 import com.millstone.tools.CopperAxe;
 import com.millstone.tools.CopperHoe;
@@ -87,6 +61,7 @@ import com.millstone.tools.SapphirePickaxe;
 import com.millstone.tools.SapphireShovel;
 import com.millstone.tools.SapphireSword;
 */
+
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
@@ -198,8 +173,10 @@ public class ItemRegistry{
 	public static Item armorObsidianLegs = new ObsidianArmor(ObsidianArmorMaterial, armorObsidianLegsID, 2).setUnlocalizedName("ObsidianLegs");
 	public static Item armorObsidianBoots = new ObsidianArmor(ObsidianArmorMaterial, armorObsidianBootsID, 3).setUnlocalizedName("ObsidianBoots");
 	
-	/*
+	
 	//Items 
+	public static Item boneShard = new BoneShard();
+	/*
 	public static Item Rock = new Rock();
 	public static Item stoneDust = new StoneDust();
 	public static Item ironDust = new IronDust();
@@ -213,7 +190,6 @@ public class ItemRegistry{
 	public static Item sapphire = new Sapphire();
 	public static Item silverIngot = new SilverIngot();
 	public static Item ironRod = new IronRod();
-	public static Item boneShard = new BoneShard();
 	public static Item ironNugget = new IronNugget();
 	
 	public static Item leatherStrip = new LeatherStrip();
@@ -348,7 +324,9 @@ public class ItemRegistry{
 	//Misc
 	GameRegistry.registerItem(Rock, "rock");
 	GameRegistry.registerItem(ironRod, "ironRod");
+	*/
 	GameRegistry.registerItem(boneShard, "boneShard");
+	/*
 	GameRegistry.registerItem(ricePaper, "ricePaper");
 	GameRegistry.registerItem(flour, "flour");
 	GameRegistry.registerItem(rottenArrow, "rottenArrow");

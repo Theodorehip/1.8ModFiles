@@ -17,7 +17,7 @@ public class tabAdventurePlusArmor extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return ItemRegistry.boneShard;
 		//return ItemRegistry.armorObsidianChest;
 	}
 }
