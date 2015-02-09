@@ -1,5 +1,8 @@
 package com.adventureplus;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.ItemStack;
@@ -11,6 +14,7 @@ import com.adventureplus.lib.CommonProxy;
 import com.adventureplus.lib.References;
 import com.adventureplus.registry.*;
 import com.adventureplus.creativetab.*;
+import com.adventureplus.items.*;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,6 +29,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 //This Class is very organized, Please keep it that way.
 
@@ -127,6 +132,10 @@ public class AdventurePlusMod {
   		//Register your renderer in your proxy.
   		proxy.registerRenderThings();
   		proxy.registerTileEntitySpecialRenderer();
+  		
+  		
+  		//1.8 RENDERING THINGS
+  		ItemRegistry.Render(event);
   		
   		logger.info("Mod loaded");
 

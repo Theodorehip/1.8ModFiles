@@ -1,6 +1,9 @@
 package com.adventureplus.registry;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -14,55 +17,10 @@ import com.adventureplus.lib.References;
 import com.adventureplus.armor.*;
 import com.adventureplus.items.*;
 
-//import com.adventureplus.tools.*;
-//import com.adventureplus.blocks.*;
-
-/*
-import com.millstone.armor.CopperArmor;
-import com.millstone.armor.EmeraldArmor;
-import com.millstone.armor.ObsidianArmor;
-import com.millstone.armor.RubyArmor;
-import com.millstone.armor.SapphireArmor;
-import com.millstone.blocks.ItemColoredBed;
-import com.millstone.blocks.crops.CottonPlant;
-import com.millstone.blocks.crops.FlaxPlant;
-import com.millstone.blocks.crops.RicePlant;
-import com.millstone.blocks.crops.TomatoPlant;
-import com.millstone.tools.BonePickaxe;
-import com.millstone.tools.CopperAxe;
-import com.millstone.tools.CopperHoe;
-import com.millstone.tools.CopperPickaxe;
-import com.millstone.tools.CopperShovel;
-import com.millstone.tools.EmeraldAxe;
-import com.millstone.tools.EmeraldHoe;
-import com.millstone.tools.EmeraldPickaxe;
-import com.millstone.tools.EmeraldShovel;
-import com.millstone.tools.EmeraldSword;
-import com.millstone.tools.FlintHatchet;
-import com.millstone.tools.FlintKnife;
-import com.millstone.tools.IronAxe;
-import com.millstone.tools.IronHoe;
-import com.millstone.tools.IronPickaxe;
-import com.millstone.tools.IronShovel;
-import com.millstone.tools.IronSword;
-import com.millstone.tools.ObsidianAxe;
-import com.millstone.tools.ObsidianHoe;
-import com.millstone.tools.ObsidianPickaxe;
-import com.millstone.tools.ObsidianShovel;
-import com.millstone.tools.ObsidianSword;
-import com.millstone.tools.RubyAxe;
-import com.millstone.tools.RubyHoe;
-import com.millstone.tools.RubyPickaxe;
-import com.millstone.tools.RubyShovel;
-import com.millstone.tools.RubySword;
-import com.millstone.tools.SapphireAxe;
-import com.millstone.tools.SapphireHoe;
-import com.millstone.tools.SapphirePickaxe;
-import com.millstone.tools.SapphireShovel;
-import com.millstone.tools.SapphireSword;
-*/
-
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 
 public class ItemRegistry{
@@ -325,7 +283,6 @@ public class ItemRegistry{
 	GameRegistry.registerItem(Rock, "rock");
 	GameRegistry.registerItem(ironRod, "ironRod");
 	*/
-	GameRegistry.registerItem(boneShard, "boneShard");
 	/*
 	GameRegistry.registerItem(ricePaper, "ricePaper");
 	GameRegistry.registerItem(flour, "flour");
@@ -367,4 +324,17 @@ public class ItemRegistry{
 	GameRegistry.registerItem(diamondGear, "diamondGear");	
 	*/
 	}
+    
+    public static void Render(FMLInitializationEvent event){
+    	
+		if (event.getSide() == Side.CLIENT) {
+
+			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+			renderItem.getItemModelMesher().register(boneShard, 0, new ModelResourceLocation(References.MODID + ":" + ((BoneShard) boneShard).getName(), "inventory"));
+			
+			
+		}
+    	
+    	
+    }
 }
