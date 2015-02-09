@@ -1,6 +1,7 @@
 package com.adventureplus.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import com.adventureplus.AdventurePlusMod;
@@ -15,7 +16,7 @@ public class tabAdventurePlusTools extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return ItemRegistry.boneShard;
+		return Items.diamond_pickaxe;
 		//return ItemRegistry.obsidianPickaxe;
 	}
 }

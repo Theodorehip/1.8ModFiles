@@ -1,10 +1,10 @@
-itemGroup.tabMillstone=Millstone Main
-itemGroup.tabMillstoneTools=Millstone Tools
-itemGroup.tabMillstoneArmor=Millstone Armors
-itemGroup.tabMillstoneMaterials=Millstone Materials
-itemGroup.tabMillstoneFood=Millstone Food
-itemGroup.tabMillstoneMisc=Millstone Miscellaneous
-itemGroup.tabMillstoneDeco=Millstone Decorations
+itemGroup.tabAdventurePlus=Adventure+ Main
+itemGroup.tabAdventurePlusTools=Adventure+ Tools
+itemGroup.tabAdventurePlusArmor=Adventure+ Armors
+itemGroup.tabAdventurePlusMaterials=Adventure+ Materials
+itemGroup.tabAdventurePlusFood=Adventure+ Food
+itemGroup.tabAdventurePlusMisc=Adventure+ Miscellaneous
+itemGroup.tabAdventurePlusDeco=Adventure+ Decorations
 
 entity.Scarecrow.name=Scarecrow
 entity.Boar.name=Boar
@@ -62,7 +62,7 @@ item.riceSeeds.name=Rice Seeds
 item.riceBowl.name=Bowl of Rice
 
 item.bonePickaxe.name=Bone Pickaxe
-item.boneShard.name=Bone Shard
+item.BoneShard.name=Bone Shard
 item.flintKnife.name=Flint Knife
 item.flintHatchet.name=Flint Hatchet
 

@@ -2,13 +2,18 @@ package com.adventureplus.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 
 import com.adventureplus.AdventurePlusMod;
-//import com.millstone.blocks.*;
+import com.adventureplus.blocks.*;
 //import com.millstone.blocks.ores.*;
 import com.adventureplus.lib.References;
 //import com.millstone.trees.*;
+
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -17,8 +22,9 @@ public class BlockRegistry {
 	/*
 	//misc
 	public static Block obsidianBlock = new ObsidianBlock(Material.rock).setBlockName("obsidianBlock");
-	public static Block lantern = new Lantern(Material.glass).setHardness(0.3F).setLightLevel(1.0F).setBlockName("lantern").setBlockTextureName("lantern");	
-	
+	*/
+	public static Block lantern = new Lantern(Material.glass).setHardness(0.3F).setLightLevel(1.0F);	
+	/*
 	//Interactive Blocks
 	public static Block millstoneIdle = new Millstone(false).setBlockName("millstoneIdle").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
 	public static Block millstoneActive = new Millstone(true).setBlockName("millstoneActive").setHardness(5F);;
@@ -164,4 +170,11 @@ public class BlockRegistry {
 				
 		*/
 	}
+    public static void RenderBlocks(){
+
+    	RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+		
+		renderItem.getItemModelMesher().register(Item.getItemFromBlock(lantern), 0, new ModelResourceLocation(References.MODID + ":" + ((Lantern) lantern).getName(), "inventory"));
+    	
+    }
 }

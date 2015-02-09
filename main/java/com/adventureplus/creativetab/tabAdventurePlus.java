@@ -1,6 +1,8 @@
 package com.adventureplus.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import com.adventureplus.registry.BlockRegistry;
@@ -15,7 +17,7 @@ public class tabAdventurePlus extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return ItemRegistry.boneShard;
+		return Item.getItemFromBlock(Blocks.furnace);
 		//return Item.getItemFromBlock(BlockRegistry.millstoneIdle);
 	}
 }

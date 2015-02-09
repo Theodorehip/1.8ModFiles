@@ -325,16 +325,11 @@ public class ItemRegistry{
 	*/
 	}
     
-    public static void Render(FMLInitializationEvent event){
-    	
-		if (event.getSide() == Side.CLIENT) {
+    public static void RenderItems(){
 
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
 			renderItem.getItemModelMesher().register(boneShard, 0, new ModelResourceLocation(References.MODID + ":" + ((BoneShard) boneShard).getName(), "inventory"));
 			
-			
-		}
-    	
     	
     }
 }

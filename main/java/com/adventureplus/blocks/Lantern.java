@@ -12,21 +12,31 @@ import com.adventureplus.AdventurePlusMod;
 import com.adventureplus.lib.References;
 import com.adventureplus.registry.ItemRegistry;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Lantern extends Block{
 	
-	
+    private final String name = "Lantern";
+    
     public Lantern(Material p_i45409_1_)
     {
         super(p_i45409_1_);
+        GameRegistry.registerBlock(this, name);
+        setUnlocalizedName(References.MODID + "_" + name);
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
-    }
+	}
 
-    /**
-     * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i' (inclusive).
-     */
+	public String getName() {
+		return name;
+		
+	}
+
+	/**
+	 * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i'
+	 * (inclusive).
+	 */
     public int quantityDroppedWithBonus(int p_149679_1_, Random p_149679_2_)
     {
         return MathHelper.clamp_int(this.quantityDropped(p_149679_2_) + p_149679_2_.nextInt(p_149679_1_ + 1), 1, 4);

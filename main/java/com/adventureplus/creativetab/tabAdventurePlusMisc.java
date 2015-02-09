@@ -1,6 +1,7 @@
 package com.adventureplus.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import com.adventureplus.AdventurePlusMod;
@@ -15,7 +16,7 @@ public class tabAdventurePlusMisc extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return ItemRegistry.boneShard;
+		return Items.iron_ingot;
 		//return ItemRegistry.ironGear;
 	}
 }

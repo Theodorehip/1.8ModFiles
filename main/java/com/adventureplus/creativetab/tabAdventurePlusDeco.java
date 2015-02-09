@@ -1,6 +1,8 @@
 package com.adventureplus.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import com.adventureplus.registry.BlockRegistry;
@@ -14,7 +16,7 @@ public class tabAdventurePlusDeco extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return null;
+		return Item.getItemFromBlock(Blocks.glowstone);
 		//return Item.getItemFromBlock(BlockRegistry.lantern);
 	}
 }

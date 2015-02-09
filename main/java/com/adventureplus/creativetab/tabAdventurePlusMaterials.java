@@ -1,6 +1,7 @@
 package com.adventureplus.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import com.adventureplus.registry.ItemRegistry;
@@ -14,7 +15,7 @@ public class tabAdventurePlusMaterials extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return ItemRegistry.boneShard;
+		return Items.gold_nugget;
 		//return ItemRegistry.obsidianDust;
 	}
 }
