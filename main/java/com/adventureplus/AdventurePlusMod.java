@@ -137,8 +137,8 @@ public class AdventurePlusMod {
   		//1.8 RENDERING THINGS
 		if (event.getSide() == Side.CLIENT) {
 			
-		ItemRegistry.Render();
-		BlockRegistry.Render();
+		ItemRegistry.RenderItems();
+		BlockRegistry.RenderBlocks();
 		
   		}
 

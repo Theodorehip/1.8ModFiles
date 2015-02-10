@@ -13,8 +13,9 @@ public class BoneShard extends Item {
 	public BoneShard() {
 		
 		//Now setup in ItemRegistry
-		//GameRegistry.registerItem(this, "BoneShard");
+		GameRegistry.registerItem(this, "BoneShard");
 		this.setUnlocalizedName("BoneShard");
+        this.setCreativeTab(AdventurePlusMod.tabAdventurePlusMaterials);
 	}
 	
 }
