@@ -171,8 +171,6 @@ public class BlockRegistry {
 				
 		*/
 		
-		//GameRegistry is still here!
-		GameRegistry.registerBlock(lantern, "Lantern");
 	}
     
 	//USE THIS TO REGISTER RENDER! DO NOT COPY/PASTE THE WHOLE LINE FOR EACH ITEM, IT'S EASIER TO CALL THE METHOD FROM ANOTHER ONE!
