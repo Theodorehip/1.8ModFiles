@@ -15,6 +15,7 @@ import com.adventureplus.lib.References;
 //import com.millstone.trees.*;
 
 
+
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockRegistry {
@@ -23,7 +24,7 @@ public class BlockRegistry {
 	//misc
 	public static Block obsidianBlock = new ObsidianBlock(Material.rock).setBlockName("obsidianBlock");
 	*/
-	public static Block lantern = new Lantern(Material.glass).setHardness(0.3F).setLightLevel(1.0F);	
+	public static Block lantern = new Lantern(Material.glass).setHardness(0.3F).setLightLevel(1.0F).setUnlocalizedName("Lantern");	
 	/*
 	//Interactive Blocks
 	public static Block millstoneIdle = new Millstone(false).setBlockName("millstoneIdle").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
@@ -169,12 +170,25 @@ public class BlockRegistry {
 		}
 				
 		*/
-	}
-    public static void RenderBlocks(){
-
-    	RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
 		
-		renderItem.getItemModelMesher().register(Item.getItemFromBlock(lantern), 0, new ModelResourceLocation(References.MODID + ":" + lantern.getUnlocalizedName().substring(5), "inventory"));
-    	
-    }
+		//GameRegistry is still here!
+		GameRegistry.registerBlock(lantern, "Lantern");
+	}
+    
+	//USE THIS TO REGISTER RENDER! DO NOT COPY/PASTE THE WHOLE LINE FOR EACH ITEM, IT'S EASIER TO CALL THE METHOD FROM ANOTHER ONE!
+	public static void Render(){
+		registerRender(lantern);
+		//Just like this! And now it does it automatically!
+	}
+	
+	
+	public static void registerRender(Block block){
+		
+		//And here! Now you are telling the game to get the item from the block! 
+		//Which means... No more Item class for the block!
+		Item item = Item.getItemFromBlock(block);
+		
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(References.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		
+	}
 }

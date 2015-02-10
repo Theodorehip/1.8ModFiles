@@ -17,12 +17,19 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Lantern extends Block{
+	
+    //private final String name = "Lantern";
+	private final String name = this.getUnlocalizedName();
     
     public Lantern(Material p_i45409_1_)
     {
         super(p_i45409_1_);
+
         GameRegistry.registerBlock(this, "Lantern");
         setUnlocalizedName("Lantern");
+
+        //GameRegistry.registerBlock(this, name);
+        setUnlocalizedName(References.MODID + ":" + name);
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
 	}
 

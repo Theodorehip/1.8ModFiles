@@ -133,7 +133,7 @@ public class ItemRegistry{
 	
 	
 	//Items 
-	public static Item boneShard = new BoneShard();
+	public static Item boneShard = new BoneShard().setUnlocalizedName("BoneShard");
 	/*
 	public static Item Rock = new Rock();
 	public static Item stoneDust = new StoneDust();
@@ -323,13 +323,22 @@ public class ItemRegistry{
 	GameRegistry.registerItem(goldGear, "goldGear");
 	GameRegistry.registerItem(diamondGear, "diamondGear");	
 	*/
-	}
-    
-    public static void RenderItems(){
-
-			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-			renderItem.getItemModelMesher().register(boneShard, 0, new ModelResourceLocation(References.MODID + ":" + boneShard.getUnlocalizedName().substring(5), "inventory"));
-			
     	
+    	//GameRegistry is still here!
+    	GameRegistry.registerItem(boneShard, "boneShard");
+	}
+
+
+    /*
+     * Do not forget this! Very important
+     */
+    public static void Render(){
+		registerRender(boneShard);
     }
+    
+public static void registerRender(Item item){
+		
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(References.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		
+	}
 }
