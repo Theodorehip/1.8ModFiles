@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "adventureplusmod:items/BoneShard"
+        "layer0": "adventureplus:items/BoneShard"
     },
     "display": {
         "thirdperson": {
