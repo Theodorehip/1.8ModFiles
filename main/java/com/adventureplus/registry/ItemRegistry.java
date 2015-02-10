@@ -323,14 +323,16 @@ public class ItemRegistry{
 	GameRegistry.registerItem(goldGear, "goldGear");
 	GameRegistry.registerItem(diamondGear, "diamondGear");	
 	*/
-
+    	
+    	//GameRegistry is still here!
+    	GameRegistry.registerItem(boneShard, "boneShard");
 	}
 
 
     /*
      * Do not forget this! Very important
      */
-    public static void RenderItems(){
+    public static void Render(){
 		registerRender(boneShard);
     }
     
