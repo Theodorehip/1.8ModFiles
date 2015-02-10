@@ -81,7 +81,7 @@ public class AdventurePlusMod {
       @EventHandler
       public void preinit(FMLInitializationEvent event)
       {  
-      	logger.info("Initializing AdventurePlusMod" + References.VERSION);
+      	logger.info("Initializing Adventure+Mod" + References.VERSION);
       	
       	//Events
       	//MinecraftForge.EVENT_BUS.register(new CustomDropsEvent());
