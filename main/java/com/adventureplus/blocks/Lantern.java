@@ -17,21 +17,15 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Lantern extends Block{
-	
-    private final String name = "Lantern";
     
     public Lantern(Material p_i45409_1_)
     {
         super(p_i45409_1_);
-        GameRegistry.registerBlock(this, name);
-        setUnlocalizedName(References.MODID + ":" + name);
+        GameRegistry.registerBlock(this, "Lantern");
+        setUnlocalizedName("Lantern");
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
 	}
 
-	public String getName() {
-		return name;
-		
-	}
 
 	/**
 	 * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i'

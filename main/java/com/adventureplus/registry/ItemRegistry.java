@@ -328,7 +328,7 @@ public class ItemRegistry{
     public static void RenderItems(){
 
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-			renderItem.getItemModelMesher().register(boneShard, 0, new ModelResourceLocation(References.MODID + ":" + ((BoneShard) boneShard).getName(), "inventory"));
+			renderItem.getItemModelMesher().register(boneShard, 0, new ModelResourceLocation(References.MODID + ":" + boneShard.getUnlocalizedName().substring(5), "inventory"));
 			
     	
     }

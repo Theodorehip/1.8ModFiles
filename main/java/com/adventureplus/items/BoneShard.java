@@ -8,18 +8,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BoneShard extends Item {
 	
-	private final String name = "BoneShard";
-	
 	public BoneShard() {
 		
-		GameRegistry.registerItem(this, name);
-		this.setUnlocalizedName(References.MODID + "_" + name);
+		GameRegistry.registerItem(this, "BoneShard");
+		this.setUnlocalizedName("BoneShard");
 		this.setCreativeTab(AdventurePlusMod.tabAdventurePlusMaterials);
 		
 	}
 	
-	public String getName(){
-		
-		return name;
-	}
 }

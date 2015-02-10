@@ -174,7 +174,7 @@ public class BlockRegistry {
 
     	RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
 		
-		renderItem.getItemModelMesher().register(Item.getItemFromBlock(lantern), 0, new ModelResourceLocation(References.MODID + ":" + ((Lantern) lantern).getName(), "inventory"));
+		renderItem.getItemModelMesher().register(Item.getItemFromBlock(lantern), 0, new ModelResourceLocation(References.MODID + ":" + lantern.getUnlocalizedName().substring(5), "inventory"));
     	
     }
 }
