@@ -3,7 +3,7 @@ package com.adventureplus.lib;
 public class References {
 	
 	public static final String MODID = "adventureplus";
-	public static final String VERSION = "0.1.0";
+	public static final String VERSION = "0.2.0";
 	public static final String Name = "AdventurePlus Mod";
 	public static final String Client = "com.adventureplus.lib.ClientProxy";
 	public static final String Common = "com.adventureplus.lib.CommonProxy";

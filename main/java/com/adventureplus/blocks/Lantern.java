@@ -24,7 +24,7 @@ public class Lantern extends Block{
     {
         super(p_i45409_1_);
         GameRegistry.registerBlock(this, name);
-        setUnlocalizedName(References.MODID + "_" + name);
+        setUnlocalizedName(References.MODID + ":" + name);
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
 	}
 
