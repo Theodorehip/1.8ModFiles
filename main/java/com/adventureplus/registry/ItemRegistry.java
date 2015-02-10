@@ -324,8 +324,6 @@ public class ItemRegistry{
 	GameRegistry.registerItem(diamondGear, "diamondGear");	
 	*/
     	
-    	//GameRegistry is still here!
-    	GameRegistry.registerItem(boneShard, "boneShard");
 	}
 
 
