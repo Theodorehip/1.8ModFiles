@@ -64,7 +64,7 @@ public class AdventurePlusMod {
 	
 	//Used to send some Log INFO/ERROR/STDOUT...
 	//public static Logger logger = LogManager.getLogger("AdventurePlus");
-    private static final Logger logger = LogManager.getLogger();
+    public static final Logger logger = LogManager.getLogger();
 	
   //Misc
     

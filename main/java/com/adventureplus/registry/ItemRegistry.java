@@ -133,7 +133,7 @@ public class ItemRegistry{
 	
 	
 	//Items 
-	public static Item boneShard = new BoneShard().setUnlocalizedName("BoneShard");
+	public static Item boneShard = new BoneShard();
 	/*
 	public static Item Rock = new Rock();
 	public static Item stoneDust = new StoneDust();
@@ -336,12 +336,13 @@ public class ItemRegistry{
 		
 		
 		
-		
+		AdventurePlusMod.logger.info("Items Rendered");
     }
     
-public static void registerRender(Item item){
+    public static void registerRender(Item item){
 		
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(References.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		
 		
 	}
 }

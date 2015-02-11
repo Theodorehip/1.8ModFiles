@@ -11,6 +11,7 @@ import net.minecraft.util.MathHelper;
 import com.adventureplus.AdventurePlusMod;
 import com.adventureplus.lib.References;
 import com.adventureplus.registry.ItemRegistry;
+import com.adventureplus.items.BoneShard;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -22,12 +23,10 @@ public class Lantern extends Block{
     public Lantern(Material p_i45409_1_)
     {
         super(p_i45409_1_);
-
         GameRegistry.registerBlock(this, "Lantern");
-        setUnlocalizedName("Lantern");
+        this.setUnlocalizedName("Lantern");
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
 	}
-
 
 	/**
 	 * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i'
