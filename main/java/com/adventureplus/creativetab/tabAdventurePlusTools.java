@@ -16,7 +16,7 @@ public class tabAdventurePlusTools extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return Items.diamond_pickaxe;
-		//return ItemRegistry.obsidianPickaxe;
+
+		return ItemRegistry.obsidianPickaxe;
 	}
 }

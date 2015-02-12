@@ -16,7 +16,7 @@ public class tabAdventurePlusDeco extends CreativeTabs{
 	
 	@Override
 	public Item getTabIconItem(){
-		return Item.getItemFromBlock(Blocks.glowstone);
-		//return Item.getItemFromBlock(BlockRegistry.lantern);
+		
+		return Item.getItemFromBlock(BlockRegistry.lantern);
 	}
 }

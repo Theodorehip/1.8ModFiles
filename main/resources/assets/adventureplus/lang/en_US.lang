@@ -21,50 +21,51 @@ item.stoneDust.name=Stone Dust
 item.goldDust.name=Gold Dust
 item.ironDust.name=Iron Dust
 item.ObsidianDust.name=Obsidian Dust
-item.obsidianSword.name=Obsidian Sword
-item.obsidianHoe.name=Obsidian Hoe
-item.obsidianAxe.name=Obsidian Axe
-item.obsidianPickaxe.name=Obsidian Pickaxe
-item.obsidianShovel.name=Obsidian Shovel
 
-item.copperSword.name=Copper Sword
-item.copperHoe.name=Copper Hoe
-item.copperAxe.name=Copper Axe
-item.copperPickaxe.name=Copper Pickaxe
-item.copperShovel.name=Copper Shovel
+item.ObsidianSword.name=Obsidian Sword
+item.ObsidianHoe.name=Obsidian Hoe
+item.ObsidianAxe.name=Obsidian Axe
+item.ObsidianPickaxe.name=Obsidian Pickaxe
+item.ObsidianShovel.name=Obsidian Shovel
 
-item.ironSword.name=Iron Sword
-item.ironHoe.name=Iron Hoe
-item.ironAxe.name=Iron Axe
-item.ironPickaxe.name=Iron Pickaxe
-item.ironShovel.name=Iron Shovel
+item.CopperSword.name=Copper Sword
+item.CopperHoe.name=Copper Hoe
+item.CopperAxe.name=Copper Axe
+item.CopperPickaxe.name=Copper Pickaxe
+item.CopperShovel.name=Copper Shovel
 
-item.rubySword.name=Ruby Sword
-item.rubyHoe.name=Ruby Hoe
-item.rubyAxe.name=Ruby Axe
-item.rubyPickaxe.name=Ruby Pickaxe
-item.rubyShovel.name=Ruby Shovel
+item.IronSword.name=Iron Sword
+item.IronHoe.name=Iron Hoe
+item.IronAxe.name=Iron Axe
+item.IronPickaxe.name=Iron Pickaxe
+item.IronShovel.name=Iron Shovel
 
-item.emeraldSword.name=Emerald Sword
-item.emeraldHoe.name=Emerald Hoe
-item.emeraldAxe.name=Emerald Axe
-item.emeraldPickaxe.name=Emerald Pickaxe
-item.emeraldShovel.name=Emerald Shovel
+item.RubySword.name=Ruby Sword
+item.RubyHoe.name=Ruby Hoe
+item.RubyAxe.name=Ruby Axe
+item.RubyPickaxe.name=Ruby Pickaxe
+item.RubyShovel.name=Ruby Shovel
 
-item.sapphireSword.name=Sapphire Sword
-item.sapphireHoe.name=Sapphire Hoe
-item.sapphireAxe.name=Sapphire Axe
-item.sapphirePickaxe.name=Sapphire Pickaxe
-item.sapphireShovel.name=Sapphire Shovel
+item.EmeraldSword.name=Emerald Sword
+item.EmeraldHoe.name=Emerald Hoe
+item.EmeraldAxe.name=Emerald Axe
+item.EmeraldPickaxe.name=Emerald Pickaxe
+item.EmeraldShovel.name=Emerald Shovel
+
+item.SapphireSword.name=Sapphire Sword
+item.SapphireHoe.name=Sapphire Hoe
+item.SapphireAxe.name=Sapphire Axe
+item.SapphirePickaxe.name=Sapphire Pickaxe
+item.SapphireShovel.name=Sapphire Shovel
 
 item.riceCrop.name=Rice
 item.riceSeeds.name=Rice Seeds
 item.riceBowl.name=Bowl of Rice
 
-item.bonePickaxe.name=Bone Pickaxe
+item.BonePickaxe.name=Bone Pickaxe
 item.BoneShard.name=Bone Shard
-item.flintKnife.name=Flint Knife
-item.flintHatchet.name=Flint Hatchet
+item.FlintKnife.name=Flint Knife
+item.FlintHatchet.name=Flint Hatchet
 
 item.tomato.name=Tomato
 item.tomatoPlant.name=Tomato Plant

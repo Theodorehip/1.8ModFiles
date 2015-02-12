@@ -16,6 +16,7 @@ import com.adventureplus.AdventurePlusMod;
 import com.adventureplus.lib.References;
 import com.adventureplus.armor.*;
 import com.adventureplus.items.*;
+import com.adventureplus.tools.*;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.Event;
@@ -38,48 +39,48 @@ public class ItemRegistry{
 	public static ArmorMaterial SapphireArmorMaterial = EnumHelper.addArmorMaterial("SapphireArmor", "Sapphire", 33, new int[]{3, 8, 6, 3}, 10);
 	public static ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("EmeraldArmor", "Emerald", 33, new int[]{3, 8, 6, 3}, 10);
 	public static ArmorMaterial ObsidianArmorMaterial = EnumHelper.addArmorMaterial("ObsidianArmor", "Obsidian", 42, new int[]{4, 10, 4, 2}, 20);
-/*
+
 	//Tools
-	public static Item bonePickaxe = new BonePickaxe(Tier0).setUnlocalizedName("bonePickaxe");
-	public static Item flintKnife = new FlintKnife(Tier0).setUnlocalizedName("flintKnife");
-	public static Item flintHatchet = new FlintHatchet(Tier0).setUnlocalizedName("flintHatchet");
+	public static Item bonePickaxe = new BonePickaxe(Tier0);
+	public static Item flintKnife = new FlintKnife(Tier0);
+	public static Item flintHatchet = new FlintHatchet(Tier0);
 	
-	public static Item ironPickaxe = new IronPickaxe(CustomIron).setUnlocalizedName("ironPickaxe");
-	public static Item ironShovel = new IronShovel(CustomIron).setUnlocalizedName("ironShovel");
-	public static Item ironAxe = new IronAxe(CustomIron).setUnlocalizedName("ironAxe");
-	public static Item ironHoe = new IronHoe(CustomIron).setUnlocalizedName("ironHoe");
-	public static Item ironSword = new IronSword(CustomIron).setUnlocalizedName("ironSword");
+	public static Item ironPickaxe = new IronPickaxe(CustomIron);
+	public static Item ironShovel = new IronShovel(CustomIron);
+	public static Item ironAxe = new IronAxe(CustomIron);
+	public static Item ironHoe = new IronHoe(CustomIron);
+	public static Item ironSword = new IronSword(CustomIron);
 	
-	public static Item copperPickaxe = new CopperPickaxe(CopperMaterial).setUnlocalizedName("copperPickaxe");
-	public static Item copperShovel = new CopperShovel(CopperMaterial).setUnlocalizedName("copperShovel");
-	public static Item copperAxe = new CopperAxe(CopperMaterial).setUnlocalizedName("copperAxe");
-	public static Item copperHoe = new CopperHoe(CopperMaterial).setUnlocalizedName("copperHoe");
-	//public static Item copperSword = new CopperSword(CopperMaterial).setUnlocalizedName("copperSword");	
+	public static Item copperPickaxe = new CopperPickaxe(CopperMaterial);
+	public static Item copperShovel = new CopperShovel(CopperMaterial);
+	public static Item copperAxe = new CopperAxe(CopperMaterial);
+	public static Item copperHoe = new CopperHoe(CopperMaterial);
+	public static Item copperSword = new CopperSword(CopperMaterial);	
 	
-	public static Item rubyPickaxe = new RubyPickaxe(RubyMaterial).setUnlocalizedName("rubyPickaxe");
-	public static Item rubyShovel = new RubyShovel(RubyMaterial).setUnlocalizedName("rubyShovel");
-	public static Item rubyAxe = new RubyAxe(RubyMaterial).setUnlocalizedName("rubyAxe");
-	public static Item rubyHoe = new RubyHoe(RubyMaterial).setUnlocalizedName("rubyHoe");
-	public static Item rubySword = new RubySword(RubyMaterial).setUnlocalizedName("rubySword");
+	public static Item rubyPickaxe = new RubyPickaxe(RubyMaterial);
+	public static Item rubyShovel = new RubyShovel(RubyMaterial);
+	public static Item rubyAxe = new RubyAxe(RubyMaterial);
+	public static Item rubyHoe = new RubyHoe(RubyMaterial);
+	public static Item rubySword = new RubySword(RubyMaterial);
 	
-	public static Item sapphirePickaxe = new SapphirePickaxe(SapphireMaterial).setUnlocalizedName("sapphirePickaxe");
-	public static Item sapphireShovel = new SapphireShovel(SapphireMaterial).setUnlocalizedName("sapphireShovel");
-	public static Item sapphireAxe = new SapphireAxe(SapphireMaterial).setUnlocalizedName("sapphireAxe");
-	public static Item sapphireHoe = new SapphireHoe(SapphireMaterial).setUnlocalizedName("sapphireHoe");
-	public static Item sapphireSword = new SapphireSword(SapphireMaterial).setUnlocalizedName("sapphireSword");	
+	public static Item sapphirePickaxe = new SapphirePickaxe(SapphireMaterial);
+	public static Item sapphireShovel = new SapphireShovel(SapphireMaterial);
+	public static Item sapphireAxe = new SapphireAxe(SapphireMaterial);
+	public static Item sapphireHoe = new SapphireHoe(SapphireMaterial);
+	public static Item sapphireSword = new SapphireSword(SapphireMaterial);	
 	
-	public static Item emeraldPickaxe = new EmeraldPickaxe(EmeraldMaterial).setUnlocalizedName("emeraldPickaxe");
-	public static Item emeraldShovel = new EmeraldShovel(EmeraldMaterial).setUnlocalizedName("emeraldShovel");
-	public static Item emeraldAxe = new EmeraldAxe(EmeraldMaterial).setUnlocalizedName("emeraldAxe");
-	public static Item emeraldHoe = new EmeraldHoe(EmeraldMaterial).setUnlocalizedName("emeraldHoe");
-	public static Item emeraldSword = new EmeraldSword(EmeraldMaterial).setUnlocalizedName("emeraldSword");	
+	public static Item emeraldPickaxe = new EmeraldPickaxe(EmeraldMaterial);
+	public static Item emeraldShovel = new EmeraldShovel(EmeraldMaterial);
+	public static Item emeraldAxe = new EmeraldAxe(EmeraldMaterial);
+	public static Item emeraldHoe = new EmeraldHoe(EmeraldMaterial);
+	public static Item emeraldSword = new EmeraldSword(EmeraldMaterial);	
 	
-	public static Item obsidianPickaxe = new ObsidianPickaxe(ObsidianMaterial).setUnlocalizedName("obsidianPickaxe");
-	public static Item obsidianShovel = new ObsidianShovel(ObsidianMaterial).setUnlocalizedName("obsidianShovel");
-	public static Item obsidianAxe = new ObsidianAxe(ObsidianMaterial).setUnlocalizedName("obsidianAxe");
-	public static Item obsidianHoe = new ObsidianHoe(ObsidianMaterial).setUnlocalizedName("obsidianHoe");
-	public static Item obsidianSword = new ObsidianSword(ObsidianMaterial).setUnlocalizedName("obsidianSword");
-	*/
+	public static Item obsidianPickaxe = new ObsidianPickaxe(ObsidianMaterial);
+	public static Item obsidianShovel = new ObsidianShovel(ObsidianMaterial);
+	public static Item obsidianAxe = new ObsidianAxe(ObsidianMaterial);
+	public static Item obsidianHoe = new ObsidianHoe(ObsidianMaterial);
+	public static Item obsidianSword = new ObsidianSword(ObsidianMaterial);
+
 	//Armor
 	public static int armorCopperHelmID;
 	public static int armorCopperChestID;
@@ -194,50 +195,7 @@ public class ItemRegistry{
 	//GameRegistry
     public static void Register()
     {  
-    	/*
-	//Tools
-    GameRegistry.registerItem(bonePickaxe, "bonePickaxe");
-    GameRegistry.registerItem(flintKnife, "flintKnife");
-    GameRegistry.registerItem(flintHatchet, "flintAxe");
-    
-    GameRegistry.registerItem(ironSword, "ironSword");
-    GameRegistry.registerItem(ironHoe, "ironHoe");
-    GameRegistry.registerItem(ironAxe, "ironAxe");
-    GameRegistry.registerItem(ironPickaxe, "ironPickaxe");
-    GameRegistry.registerItem(ironShovel, "ironShovel");
-    
-  //GameRegistry.registerItem(copperSword, "copperSword");
-  	GameRegistry.registerItem(copperHoe, "copperHoe");
-  	GameRegistry.registerItem(copperAxe, "copperAxe");
-  	GameRegistry.registerItem(copperPickaxe, "copperPickaxe");
-  	GameRegistry.registerItem(copperShovel, "copperShovel");
-  	
-  	GameRegistry.registerItem(rubySword, "rubySword");
-  	GameRegistry.registerItem(rubyHoe, "rubyHoe");
-  	GameRegistry.registerItem(rubyAxe, "rubyAxe");
-  	GameRegistry.registerItem(rubyPickaxe, "rubyPickaxe");
-  	GameRegistry.registerItem(rubyShovel, "rubyShovel");
-  	
-  	GameRegistry.registerItem(sapphireSword, "sapphireSword");
-  	GameRegistry.registerItem(sapphireHoe, "sapphireHoe");
-  	GameRegistry.registerItem(sapphireAxe, "sapphireAxe");
-  	GameRegistry.registerItem(sapphirePickaxe, "sapphirePickaxe");
-  	GameRegistry.registerItem(sapphireShovel, "sapphireShovel");
-	
-	GameRegistry.registerItem(emeraldSword, "emeraldSword");
-	GameRegistry.registerItem(emeraldHoe, "emeraldHoe");
-	GameRegistry.registerItem(emeraldAxe, "emeraldAxe");
-	GameRegistry.registerItem(emeraldPickaxe, "emeraldPickaxe");
-	GameRegistry.registerItem(emeraldShovel, "emeraldShovel");
-    	
-	GameRegistry.registerItem(obsidianSword, "obsidianSword");
-	GameRegistry.registerItem(obsidianHoe, "obsidianHoe");
-	GameRegistry.registerItem(obsidianAxe, "obsidianAxe");
-	GameRegistry.registerItem(obsidianPickaxe, "obsidianPickaxe");
-	GameRegistry.registerItem(obsidianShovel, "obsidianShovel");
-
-
-	
+	/*
 	//Armors
 	GameRegistry.registerItem(armorCopperHelm, "CopperHelm");	
 	GameRegistry.registerItem(armorCopperChest, "Copperchest");
@@ -330,10 +288,44 @@ public class ItemRegistry{
      * Do not forget this! Very important
      */
     public static void Render(){
+    	
+    	//Materials
 		registerRender(boneShard);
 		
-		
-		
+		//Tools
+		registerRender(bonePickaxe);
+		registerRender(flintKnife);
+		registerRender(flintHatchet);
+		registerRender(copperPickaxe);
+		registerRender(copperAxe);
+		registerRender(copperHoe);
+		//registerRender(copperSword);
+		registerRender(copperShovel);
+		registerRender(emeraldHoe);
+		registerRender(emeraldAxe);
+		registerRender(emeraldPickaxe);
+		registerRender(emeraldSword);
+		registerRender(emeraldShovel);
+		registerRender(ironHoe);
+		registerRender(ironAxe);
+		registerRender(ironPickaxe);
+		registerRender(ironSword);
+		registerRender(ironShovel);
+		registerRender(obsidianHoe);
+		registerRender(obsidianAxe);
+		registerRender(obsidianPickaxe);
+		registerRender(obsidianSword);
+		registerRender(obsidianShovel);
+		registerRender(rubyHoe);
+		registerRender(rubyAxe);
+		registerRender(rubyPickaxe);
+		registerRender(rubySword);
+		registerRender(rubyShovel);
+		registerRender(sapphireHoe);
+		registerRender(sapphireAxe);
+		registerRender(sapphirePickaxe);
+		registerRender(sapphireSword);
+		registerRender(sapphireShovel);
 		
 		
 		AdventurePlusMod.logger.info("Items Rendered");
