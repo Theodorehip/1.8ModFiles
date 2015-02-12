@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 
 import com.adventureplus.crafting.CraftingHandler;
+import com.adventureplus.handler.CustomDropsEvent;
 import com.adventureplus.handler.GuiHandler;
 import com.adventureplus.lib.CommonProxy;
 import com.adventureplus.lib.References;
@@ -84,7 +85,7 @@ public class AdventurePlusMod {
       {  
       	
       	//Events
-      	//MinecraftForge.EVENT_BUS.register(new CustomDropsEvent());
+      	MinecraftForge.EVENT_BUS.register(new CustomDropsEvent());
       }
       
       

@@ -137,9 +137,14 @@ public class ItemRegistry{
 	public static Item boneShard = new BoneShard();
 	public static Item ruby = new Ruby();
 	public static Item sapphire = new Sapphire();
+	public static Item rock = new Rock();
+	public static Item ironNugget = new IronNugget();
+    public static Item flax = new Flax();
+	public static Item rottenArrow = new RottenArrow();
+	
+	//Plants
 	
 	/*
-	public static Item Rock = new Rock();
 	public static Item stoneDust = new StoneDust();
 	public static Item ironDust = new IronDust();
 	public static Item copperDust = new CopperDust();
@@ -151,11 +156,9 @@ public class ItemRegistry{
 
 	public static Item silverIngot = new SilverIngot();
 	public static Item ironRod = new IronRod();
-	public static Item ironNugget = new IronNugget();
 	
 	public static Item leatherStrip = new LeatherStrip();
 	public static Item grenade = new ItemGrenade();
-	public static Item rottenArrow = new rottenArrow();
 	public static Item straw = new Straw();
 	
 	//Gears
@@ -179,8 +182,7 @@ public class ItemRegistry{
     public static Item cotton = new Cotton();
     
     public static Block flaxPlant = new FlaxPlant().setBlockName("flaxPlant");
-    public static Item flaxSeeds = new ItemSeeds(flaxPlant, Blocks.farmland).setUnlocalizedName("flaxSeeds").setTextureName(References.MODID + ":flaxSeeds").setCreativeTab(MillstoneMod.tabMillstoneMaterials);
-    public static Item flax = new Flax();
+
     
     public static Block ricePlant = new RicePlant().setBlockName("ricePlant");
     public static Item riceCrop = new ItemSeeds(ricePlant, Blocks.farmland).setUnlocalizedName("riceCrop").setTextureName(References.MODID + ":riceCrop").setCreativeTab(MillstoneMod.tabMillstoneFood);
@@ -238,14 +240,11 @@ public class ItemRegistry{
 
 	
 	//Misc
-	GameRegistry.registerItem(Rock, "rock");
 	GameRegistry.registerItem(ironRod, "ironRod");
-	*/
-	/*
+	
+	
 	GameRegistry.registerItem(ricePaper, "ricePaper");
 	GameRegistry.registerItem(flour, "flour");
-	GameRegistry.registerItem(rottenArrow, "rottenArrow");
-	GameRegistry.registerItem(ironNugget, "ironNugget");
 	GameRegistry.registerItem(leatherStrip, "leatherStrip");
 	GameRegistry.registerItem(grenade, "grenade");
 	GameRegistry.registerItem(coloredBed, "coloredBed");
@@ -263,12 +262,10 @@ public class ItemRegistry{
 	GameRegistry.registerItem(riceCrop, "riceCrop");
 	GameRegistry.registerItem(cotton, "cotton");
 	GameRegistry.registerItem(tomato, "tomato");
-	GameRegistry.registerItem(flax, "flax");
 	
 	//Seeds
 	GameRegistry.registerItem(tomatoSeeds, "tomatoSeeds");
 	GameRegistry.registerItem(cottonSeeds, "cottonSeeds");
-	GameRegistry.registerItem(flaxSeeds, "flaxSeeds");
 
 	//Food
 	GameRegistry.registerItem(riceBowl, "riceBowl");
@@ -293,6 +290,10 @@ public class ItemRegistry{
 		registerRender(boneShard);
 		registerRender(sapphire);
 		registerRender(ruby);
+		registerRender(rock);
+		registerRender(ironNugget);
+		registerRender(flax);
+		registerRender(rottenArrow);
 		
 		//Tools
 		registerRender(bonePickaxe);

@@ -9,7 +9,7 @@ itemGroup.tabAdventurePlusDeco=Adventure+ Decorations
 entity.Scarecrow.name=Scarecrow
 entity.Boar.name=Boar
 
-item.rock.name=Rock
+item.Rock.name=Rock
 item.straw.name=Straw
 item.woodGear.name=Wooden Gear
 item.stoneGear.name=Stone Gear
@@ -75,7 +75,7 @@ item.cotton.name=Cotton
 item.cottonPlant.name=Cotton Plant
 item.cottonSeeds.name=Cotton Seeds
 
-item.flax.name=Flax
+item.Flax.name=Flax
 item.flaxPlant.name=Flax Plant
 item.flaxSeeds.name=Flax Seeds
 
@@ -88,12 +88,12 @@ item.sapphire.name=Sapphire
 item.silverDust.name=Silver Dust
 item.silverIngot.name=Silver Ingot
 item.ironRod.name=Iron Rod
-item.rottenArrow.name=Rotten Arrow
+item.RottenArrow.name=Rotten Arrow
 item.grenade.name=Holy Hand Grenade
 
 item.boneShard.name=Bone Shard
 item.leatherStrip.name=Leather Strip
-item.ironNugget.name=Iron Nugget
+item.IronNugget.name=Iron Nugget
 
 item.ObsidianHelm.name=Obsidian Helmet
 item.ObsidianChest.name=Obsidian Chestplate

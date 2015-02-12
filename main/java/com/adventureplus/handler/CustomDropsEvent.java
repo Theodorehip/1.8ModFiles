@@ -16,7 +16,8 @@ import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.world.BlockEvent;
 
 import com.adventureplus.AdventurePlusMod;
-//import com.millstone.registry.ItemRegistry;
+
+import com.adventureplus.registry.ItemRegistry;
 
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -27,17 +28,17 @@ public class CustomDropsEvent {
 
 	@SubscribeEvent
 	public void onDrops(BlockEvent.HarvestDropsEvent event) {
-		/*
-		if (event.block == Blocks.stone && event.harvester.getHeldItem() != null && event.harvester.getHeldItem().getItem() == ItemRegistry.bonePickaxe) {
+		
+		if (event.state.getBlock() == Blocks.stone && event.harvester.getHeldItem() != null && event.harvester.getHeldItem().getItem() == ItemRegistry.bonePickaxe) {
 			event.drops.clear();
-			event.drops.add(new ItemStack(ItemRegistry.Rock));
+			event.drops.add(new ItemStack(ItemRegistry.rock));
 		}
-
-		if (event.block == Blocks.glass && event.harvester.getHeldItem() == null) {
+		
+		if (event.state.getBlock() == Blocks.glass && event.harvester.getHeldItem() == null) {
 			event.harvester.attackEntityFrom(DamageSource.generic, 2);
 
 		}
-		if ((event.block == Blocks.log || event.block == Blocks.log2) && event.harvester.getHeldItem() != null && ((event.harvester.getHeldItem().getItem() == ItemRegistry.sapphireAxe 
+		if ((event.state.getBlock() == Blocks.log || event.state.getBlock() == Blocks.log2) && event.harvester.getHeldItem() != null && ((event.harvester.getHeldItem().getItem() == ItemRegistry.sapphireAxe 
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.copperAxe || event.harvester.getHeldItem().getItem() == ItemRegistry.emeraldAxe 
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.obsidianAxe || event.harvester.getHeldItem().getItem() == ItemRegistry.rubyAxe 
 				|| event.harvester.getHeldItem().getItem() == Items.wooden_axe || event.harvester.getHeldItem().getItem() == Items.stone_axe
@@ -46,7 +47,7 @@ public class CustomDropsEvent {
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.flintHatchet))) {
 		
 		}
-		else if ((event.block == Blocks.log || event.block == Blocks.log2)) {
+		else if ((event.state.getBlock() == Blocks.log || event.state.getBlock() == Blocks.log2)) {
 
 			event.drops.clear();
 
@@ -55,7 +56,7 @@ public class CustomDropsEvent {
 			}
 		}
 		
-		if (event.block == Blocks.coal_ore && event.harvester.getHeldItem() != null && ((event.harvester.getHeldItem().getItem() == ItemRegistry.sapphirePickaxe
+		if (event.state.getBlock() == Blocks.coal_ore && event.harvester.getHeldItem() != null && ((event.harvester.getHeldItem().getItem() == ItemRegistry.sapphirePickaxe
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.copperPickaxe  || event.harvester.getHeldItem().getItem() == ItemRegistry.emeraldPickaxe 
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.obsidianPickaxe  || event.harvester.getHeldItem().getItem() == ItemRegistry.rubyPickaxe 
 				|| event.harvester.getHeldItem().getItem() == Items.stone_pickaxe || event.harvester.getHeldItem().getItem() == Items.diamond_pickaxe  
@@ -63,12 +64,12 @@ public class CustomDropsEvent {
 				|| event.harvester.getHeldItem().getItem() == ItemRegistry.copperPickaxe ))) {
 		
 		}
-		else if ((event.block == Blocks.log || event.block == Blocks.log2)) {
+		else if ((event.state.getBlock() == Blocks.log || event.state.getBlock() == Blocks.log2)) {
 			event.drops.clear();
 			
 		}
 
-		if ((event.block == Blocks.leaves || event.block == Blocks.leaves2)) {
+		if ((event.state.getBlock() == Blocks.leaves || event.state.getBlock() == Blocks.leaves2)) {
 
 			if (r.nextInt(4) == 1) {
 				event.drops.add(new ItemStack(Items.stick));
@@ -77,20 +78,20 @@ public class CustomDropsEvent {
 			}
 		}
 
-		if (event.block == Blocks.iron_ore && event.harvester.getHeldItem() != null && event.harvester.getHeldItem().getItem() == Items.stone_pickaxe) {
+		if (event.state.getBlock() == Blocks.iron_ore && event.harvester.getHeldItem() != null && event.harvester.getHeldItem().getItem() == Items.stone_pickaxe) {
 			event.drops.clear();
 			for (int i = 0; i < 3 + r.nextInt(3); i++) {
 				event.drops.add(new ItemStack(ItemRegistry.ironNugget));
 			}
 
 		}
-		if(event.block == Blocks.tallgrass){
+		if(event.state.getBlock() == Blocks.tallgrass){
 			
 			if(r.nextInt(25) == 1){
 				event.drops.add(new ItemStack(ItemRegistry.flax));
 				event.drops.add(new ItemStack(ItemRegistry.flax));
 				event.drops.add(new ItemStack(ItemRegistry.flax));
-				event.drops.add(new ItemStack(ItemRegistry.flaxSeeds));
+			//	event.drops.add(new ItemStack(ItemRegistry.flaxSeeds));
 				
 			}
 		}
@@ -108,7 +109,7 @@ public class CustomDropsEvent {
 			event.entityLiving.dropItem(ItemRegistry.boneShard, r.nextInt(3));
 
 		}
-*/
+
 	}
 
 }
