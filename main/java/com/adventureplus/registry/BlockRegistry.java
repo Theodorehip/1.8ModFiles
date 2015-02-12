@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 
 import com.adventureplus.AdventurePlusMod;
 import com.adventureplus.blocks.*;
-//import com.millstone.blocks.ores.*;
+import com.adventureplus.blocks.ores.*;
 import com.adventureplus.lib.References;
 //import com.millstone.trees.*;
 
@@ -30,19 +30,20 @@ public class BlockRegistry {
 	public static Block millstoneIdle = new Millstone(false).setBlockName("millstoneIdle").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
 	public static Block millstoneActive = new Millstone(true).setBlockName("millstoneActive").setHardness(5F);;
 	public static Block stoneCutter = new Cutter().setBlockName("stoneCutter").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
-
+*/
 	//ores
-	public static Block copperOre = new CopperOre(Material.rock).setBlockName("copperOre");
-	public static Block netherRubyOre = new NetherRubyOre(Material.rock).setBlockName("netherRubyOre");
-	public static Block sapphireOre = new SapphireOre(Material.rock).setBlockName("sapphireOre");
-	public static Block silverOre = new SilverOre(Material.rock).setBlockName("silverOre");
-	
+	public static Block copperOre = new CopperOre(Material.rock);
+	public static Block netherRubyOre = new NetherRubyOre(Material.rock);
+	public static Block sapphireOre = new SapphireOre(Material.rock);
+	public static Block silverOre = new SilverOre(Material.rock);
+	/*
 	//NonOreSpawningBlocks
 	public static Block lavaBrick  = new LavaBrick(Material.rock).setBlockName("lavaBrick").setBlockTextureName(References.MODID + ":" + "lavaBrick");
 	public static Block Firerack  = new Firerack(Material.rock).setBlockName("Firerack").setBlockTextureName(References.MODID + ":" + "Firerack");
-	public static Block jadeOre = new Jade(Material.rock).setBlockName("Jade");
-	public static Block haliteOre = new Halite(Material.rock).setBlockName("Halite");
-	
+	*/
+	public static Block jadeOre = new Jade(Material.rock);
+	public static Block haliteOre = new Halite(Material.rock);
+	/*
 	//Walls
 	public static Block sandstoneWall = new WallBlock(Blocks.sandstone, 0).setBlockName("sandstoneWall");
 	public static Block brickWall = new WallBlock(Blocks.brick_block, 1).setBlockName("brickWall");
@@ -99,17 +100,9 @@ public class BlockRegistry {
 		GameRegistry.registerBlock(millstoneActive, "millstoneActive");
 		GameRegistry.registerBlock(stoneCutter, "stoneCutter");
 		
-		//Ores
-		GameRegistry.registerBlock(copperOre, "copperOre");
-		GameRegistry.registerBlock(sapphireOre, "sapphireOre");
-		GameRegistry.registerBlock(netherRubyOre, "netherRubyOre");
-		GameRegistry.registerBlock(silverOre, "silverOre");
-		
 		//NonOreSpawningBlocks
 		GameRegistry.registerBlock(lavaBrick, "lavaBrick");
 		GameRegistry.registerBlock(Firerack, "Firerack");
-		GameRegistry.registerBlock(jadeOre, "JadeOre");
-		GameRegistry.registerBlock(haliteOre, "HaliteOre");
 		
 		//Craftable
 		GameRegistry.registerBlock(obsidianBlock, "obsidianBlock");		
@@ -175,8 +168,17 @@ public class BlockRegistry {
     
 	//USE THIS TO REGISTER RENDER! DO NOT COPY/PASTE THE WHOLE LINE FOR EACH ITEM, IT'S EASIER TO CALL THE METHOD FROM ANOTHER ONE!
 	public static void Render(){
+		
+		//Misc
 		registerRender(lantern);
 		
+		//Ores
+		registerRender(netherRubyOre);
+		registerRender(sapphireOre);
+		registerRender(jadeOre);
+		registerRender(copperOre);
+		registerRender(silverOre);
+		registerRender(haliteOre);
 		
 		
 		AdventurePlusMod.logger.info("Blocks Rendered");

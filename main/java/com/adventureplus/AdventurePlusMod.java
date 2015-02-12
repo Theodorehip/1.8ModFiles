@@ -13,6 +13,7 @@ import com.adventureplus.handler.GuiHandler;
 import com.adventureplus.lib.CommonProxy;
 import com.adventureplus.lib.References;
 import com.adventureplus.registry.*;
+import com.adventureplus.worldgen.AdventurePlusModWorldGen;
 import com.adventureplus.creativetab.*;
 import com.adventureplus.items.*;
 
@@ -70,7 +71,7 @@ public class AdventurePlusMod {
     
     
   	//WorldGen
-  	//AdventurePlusModWorldGen eventWorldGen = new AdventurePlusModWorldGen();
+  	AdventurePlusModWorldGen eventWorldGen = new AdventurePlusModWorldGen();
   	
   	
     //Enchantment
@@ -103,7 +104,7 @@ public class AdventurePlusMod {
   		
   		//Spawn ores
   		logger.info("World Generation");
-  	    //GameRegistry.registerWorldGenerator(eventWorldGen, 0);
+  	    GameRegistry.registerWorldGenerator(eventWorldGen, 0);
   		
   		//testing generating random chest
   		//needs spawn-rate tweak

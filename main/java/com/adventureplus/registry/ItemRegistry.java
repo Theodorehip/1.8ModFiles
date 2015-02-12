@@ -135,6 +135,9 @@ public class ItemRegistry{
 	
 	//Items 
 	public static Item boneShard = new BoneShard();
+	public static Item ruby = new Ruby();
+	public static Item sapphire = new Sapphire();
+	
 	/*
 	public static Item Rock = new Rock();
 	public static Item stoneDust = new StoneDust();
@@ -145,8 +148,7 @@ public class ItemRegistry{
 	public static Item obsidianDust = new ObsidianDust();
 	
 	public static Item copperIngot = new CopperIngot();
-	public static Item ruby = new Ruby();
-	public static Item sapphire = new Sapphire();
+
 	public static Item silverIngot = new SilverIngot();
 	public static Item ironRod = new IronRod();
 	public static Item ironNugget = new IronNugget();
@@ -225,8 +227,6 @@ public class ItemRegistry{
 	//OreItems
 	GameRegistry.registerItem(copperIngot, "copperBar");
 	GameRegistry.registerItem(silverIngot, "silverBar");
-	GameRegistry.registerItem(ruby, "ruby");
-	GameRegistry.registerItem(sapphire, "sapphire");
 	
 	//Dusts
 	GameRegistry.registerItem(stoneDust, "stoneDust");
@@ -291,6 +291,8 @@ public class ItemRegistry{
     	
     	//Materials
 		registerRender(boneShard);
+		registerRender(sapphire);
+		registerRender(ruby);
 		
 		//Tools
 		registerRender(bonePickaxe);
