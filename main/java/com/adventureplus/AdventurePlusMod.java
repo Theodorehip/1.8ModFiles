@@ -81,7 +81,6 @@ public class AdventurePlusMod {
       @EventHandler
       public void preinit(FMLInitializationEvent event)
       {  
-      	logger.info("Initializing AdventurePlusMod" + References.VERSION);
       	
       	//Events
       	//MinecraftForge.EVENT_BUS.register(new CustomDropsEvent());
@@ -92,7 +91,9 @@ public class AdventurePlusMod {
       public void init(FMLInitializationEvent event)
       {   	
       	
-      	
+        logger.info("Initializing Adventure+ Mod " + References.VERSION);
+
+    	  
       	//Game Registry
   		logger.info("Registering Items, Blocks, and Entities");
   		
@@ -116,7 +117,7 @@ public class AdventurePlusMod {
   	    RecipeRegistry.RegisterSmelting();
   		
   	    
-  		logger.info("Render Entitys");
+  		logger.info("Render Entities");
   		//Tile Entity Registry
   		//GameRegistry.registerTileEntity(TileEntityMillstone.class, "tileEntityMillstone");
   		//EntityRegistry.registerModEntity(EntityGrenade.class, "Grenade", 4, this, 80, 3, true);

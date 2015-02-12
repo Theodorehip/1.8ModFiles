@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "adventureplus:blocks/Lantern" }
+        "normal": { "model": "adventureplus:Lantern" }
     }
 }

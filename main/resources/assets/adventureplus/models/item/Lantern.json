@@ -1,5 +1,5 @@
 {
-    "parent": "adventureplus:blocks/Lantern",
+    "parent": "adventureplus:block/Lantern",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],
