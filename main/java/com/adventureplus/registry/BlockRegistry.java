@@ -25,12 +25,13 @@ public class BlockRegistry {
 	public static Block obsidianBlock = new ObsidianBlock(Material.rock).setBlockName("obsidianBlock");
 	*/
 	public static Block lantern = new Lantern(Material.glass).setHardness(0.2F).setLightLevel(1.5F);
-	/*
+	
 	//Interactive Blocks
-	public static Block millstoneIdle = new Millstone(false).setBlockName("millstoneIdle").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
-	public static Block millstoneActive = new Millstone(true).setBlockName("millstoneActive").setHardness(5F);;
-	public static Block stoneCutter = new Cutter().setBlockName("stoneCutter").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
-*/
+	public static Block millstoneIdle = new Millstone(false).setUnlocalizedName("millstoneIdle").setCreativeTab(AdventurePlusMod.tabAdventurePlus).setHardness(5F);
+	public static Block millstoneActive = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
+	
+//	public static Block stoneCutter = new Cutter().setBlockName("stoneCutter").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
+
 	//ores
 	public static Block copperOre = new CopperOre(Material.rock);
 	public static Block netherRubyOre = new NetherRubyOre(Material.rock);
@@ -94,10 +95,11 @@ public class BlockRegistry {
 	
 	*/
 	public static void Register() {
-		/*
+		
 		//InteractiveBlocks
 		GameRegistry.registerBlock(millstoneIdle, "millstoneIdle");
 		GameRegistry.registerBlock(millstoneActive, "millstoneActive");
+		/*
 		GameRegistry.registerBlock(stoneCutter, "stoneCutter");
 		
 		//NonOreSpawningBlocks
@@ -168,6 +170,10 @@ public class BlockRegistry {
     
 	//USE THIS TO REGISTER RENDER! DO NOT COPY/PASTE THE WHOLE LINE FOR EACH ITEM, IT'S EASIER TO CALL THE METHOD FROM ANOTHER ONE!
 	public static void Render(){
+		
+		//Interactive Blocks
+		registerRender(millstoneIdle);
+		registerRender(millstoneActive);
 		
 		//Misc
 		registerRender(lantern);

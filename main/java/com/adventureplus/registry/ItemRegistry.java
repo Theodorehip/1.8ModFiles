@@ -160,14 +160,14 @@ public class ItemRegistry{
 	public static Item leatherStrip = new LeatherStrip();
 	public static Item grenade = new ItemGrenade();
 	public static Item straw = new Straw();
-	
+	*/
 	//Gears
-	public static Item woodGear = new com.millstone.items.ItemGear().setMaxDamage(500).setTextureName(References.MODID + ":" + "woodGear").setUnlocalizedName("woodGear");
-	public static Item stoneGear = new com.millstone.items.ItemGear().setMaxDamage(1320).setTextureName(References.MODID + ":" + "stoneGear").setUnlocalizedName("stoneGear");
-	public static Item ironGear = new com.millstone.items.ItemGear().setMaxDamage(2500).setTextureName(References.MODID + ":" + "ironGear").setUnlocalizedName("ironGear");
-	public static Item goldGear = new com.millstone.items.ItemGear().setMaxDamage(240).setTextureName(References.MODID + ":" + "goldGear").setUnlocalizedName("goldGear");
-	public static Item diamondGear = new com.millstone.items.ItemGear().setMaxDamage(15612).setTextureName(References.MODID + ":" + "diamondGear").setUnlocalizedName("diamondGear");
-
+	public static Item woodGear = new ItemGear().setMaxDamage(500).setUnlocalizedName("WoodGear");
+	public static Item stoneGear = new ItemGear().setMaxDamage(1320).setUnlocalizedName("StoneGear");
+	public static Item ironGear = new ItemGear().setMaxDamage(2500).setUnlocalizedName("IronGear");
+	public static Item goldGear = new ItemGear().setMaxDamage(240).setUnlocalizedName("GoldGear");
+	public static Item diamondGear = new ItemGear().setMaxDamage(15612).setUnlocalizedName("DiamondGear");
+    /*
 	//Food
 	public static ItemFood riceBowl = new RiceBowl(3, 0.4F, false);
 	public static ItemFood sushi = new sushi(6, 0.7F, false);
@@ -270,14 +270,14 @@ public class ItemRegistry{
 	//Food
 	GameRegistry.registerItem(riceBowl, "riceBowl");
 	GameRegistry.registerItem(sushi, "sushi");
-
+*/
 	//Gears
-	GameRegistry.registerItem(woodGear, "woodGear");
-	GameRegistry.registerItem(stoneGear, "stoneGear");	
-	GameRegistry.registerItem(ironGear, "ironGear");
-	GameRegistry.registerItem(goldGear, "goldGear");
-	GameRegistry.registerItem(diamondGear, "diamondGear");	
-	*/
+	GameRegistry.registerItem(woodGear, "WoodGear");
+	GameRegistry.registerItem(stoneGear, "StoneGear");	
+	GameRegistry.registerItem(ironGear, "IronGear");
+	GameRegistry.registerItem(goldGear, "GoldGear");
+	GameRegistry.registerItem(diamondGear, "DiamondGear");	
+	
     	
 	}
 
@@ -294,6 +294,16 @@ public class ItemRegistry{
 		registerRender(ironNugget);
 		registerRender(flax);
 		registerRender(rottenArrow);
+		
+		//Gears
+		registerRender(woodGear);
+		registerRender(stoneGear);
+		registerRender(ironGear);
+		registerRender(goldGear);
+		registerRender(diamondGear);
+		
+		//Armors
+		
 		
 		//Tools
 		registerRender(bonePickaxe);
