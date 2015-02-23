@@ -27,8 +27,10 @@ public class BlockRegistry {
 	public static Block lantern = new Lantern(Material.glass).setHardness(0.2F).setLightLevel(1.5F);
 	
 	//Interactive Blocks
-	public static Block millstoneIdle = new Millstone(false).setUnlocalizedName("millstoneIdle").setCreativeTab(AdventurePlusMod.tabAdventurePlus).setHardness(5F);
-	public static Block millstoneActive = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
+	//public static Block millstoneIdle = new Millstone(false).setUnlocalizedName("millstoneIdle").setCreativeTab(AdventurePlusMod.tabAdventurePlus).setHardness(5F);
+	//public static Block millstoneActive = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
+	
+	public static Block millstone = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
 	
 //	public static Block stoneCutter = new Cutter().setBlockName("stoneCutter").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
 
@@ -97,8 +99,9 @@ public class BlockRegistry {
 	public static void Register() {
 		
 		//InteractiveBlocks
-		GameRegistry.registerBlock(millstoneIdle, "millstoneIdle");
-		GameRegistry.registerBlock(millstoneActive, "millstoneActive");
+		//GameRegistry.registerBlock(millstoneIdle, "millstoneIdle");
+		//GameRegistry.registerBlock(millstoneActive, "millstoneActive");
+		GameRegistry.registerBlock(millstone, "millstone");
 		/*
 		GameRegistry.registerBlock(stoneCutter, "stoneCutter");
 		
@@ -172,8 +175,7 @@ public class BlockRegistry {
 	public static void Render(){
 		
 		//Interactive Blocks
-		registerRender(millstoneIdle);
-		registerRender(millstoneActive);
+		registerRender(millstone);
 		
 		//Misc
 		registerRender(lantern);

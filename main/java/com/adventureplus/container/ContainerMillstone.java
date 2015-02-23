@@ -7,6 +7,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotFurnaceOutput;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.fml.relauncher.Side;
@@ -15,7 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ContainerMillstone extends Container {
 
-	private TileEntityMillstone millstone;
+private TileEntityMillstone millstone;
 	
 
 	public int lastBurnTime;
@@ -27,7 +28,7 @@ public class ContainerMillstone extends Container {
 
 		this.addSlotToContainer(new Slot(tileentity, 0, 56, 35));
 		this.addSlotToContainer(new Slot(tileentity, 1, 34, 35));
-		//this.addSlotToContainer(new SlotFurnace(inventory.player, tileentity, 2, 116, 35));
+		this.addSlotToContainer(new SlotFurnaceOutput(inventory.player, tileentity, 2, 116, 35));
 
 		for(int i = 0; i < 3; i++) {
 			for(int j = 0; j < 9; j++) {
@@ -139,7 +140,6 @@ public class ContainerMillstone extends Container {
 
 		return itemstack;
 	}
-
 
 
 	public boolean canInteractWith(EntityPlayer var1) {

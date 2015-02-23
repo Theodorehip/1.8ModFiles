@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "adventureplus:JadeOre" },
+        "facing=south": { "model": "adventureplus:JadeOre", "y": 180 },
+        "facing=west":  { "model": "adventureplus:JadeOre", "y": 270 },
+        "facing=east":  { "model": "adventureplus:JadeOre", "y": 90 }
+    }
+}

@@ -42,13 +42,14 @@ public class Millstone extends BlockContainer {
 		super(Material.iron);
 		this.isActive = isActive;
 		this.setUnlocalizedName("Millstone");
+		this.setCreativeTab(AdventurePlusMod.tabAdventurePlus);
 		
 
 	}
 	
 	//Retruns what item is dropped when broken
 	public Item getItemDropped(int i, Random random, int j) {
-		return Item.getItemFromBlock((BlockRegistry.millstoneIdle));
+		return Item.getItemFromBlock((BlockRegistry.millstone));
 	}
 	
 	public void onBlockAdded(World world, int x, int y, int z) {
@@ -151,15 +152,15 @@ public class Millstone extends BlockContainer {
 		keepInventory = true;
 		
 		if(active) {
-			worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstoneActive.getDefaultState());
+			worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstone.getDefaultState());
 			
 		}else{
-			worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstoneIdle.getDefaultState());
+			worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstone.getDefaultState());
 		}
 		
 		keepInventory = false;
 		
-		worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstoneIdle.getDefaultState(), 2);
+		worldObj.setBlockState(new BlockPos(xCoord, yCoord, zCoord), BlockRegistry.millstone.getDefaultState(), 2);
 		
 		if(tileentity != null) {
 			tileentity.validate();
@@ -210,7 +211,7 @@ public class Millstone extends BlockContainer {
 	
 	//Just return your millstone idle.
 	public Item getItem(World world, int x, int y, int z) {
-		return Item.getItemFromBlock(BlockRegistry.millstoneIdle);
+		return Item.getItemFromBlock(BlockRegistry.millstone);
 	}
 
 }

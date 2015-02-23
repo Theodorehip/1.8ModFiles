@@ -42,8 +42,6 @@ public class AdventurePlusModWorldGen implements IWorldGenerator {
 		this.addOreSpawn(BlockRegistry.jadeOre, world, random, x, z, 16, 16, 4 + random.nextInt(6), 10, 42, 63);
 		this.addOreSpawn(BlockRegistry.haliteOre, world, random, x, z, 16, 16, 4 + random.nextInt(6), 10, 42, 63);
 		
-		AdventurePlusMod.logger.info("Surface Ores Implemented");
-		
 		 String s = world.getBiomeGenForCoords(new BlockPos(x, 40, z)).biomeName;
 		 this.addOreSpawn(BlockRegistry.sapphireOre, world, random, x, z, 16, 16, 2 + random.nextInt(6), 25, 0, 20);
 		
@@ -53,8 +51,6 @@ public class AdventurePlusModWorldGen implements IWorldGenerator {
 		//this.addNetherOreSpawn(BlockRegistry.lavaBrick, world, random, x, z, 16, 16, 4 + random.nextInt(6), 50, 0, 40);
 		this.addNetherOreSpawn(BlockRegistry.netherRubyOre, world, random, x, z, 16, 16, 2 + random.nextInt(15), 50, 0, 100);
 		//this.addNetherOreSpawn(BlockRegistry.Firerack, world, random, x, z, 16, 16, 1 + random.nextInt(15), 50, 0, 120);
-		
-		AdventurePlusMod.logger.info("Nether Ores Implemented");
 
 	}
 
