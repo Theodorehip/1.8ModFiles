@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "adventureplus:blocks/GrindstoneTop",
+        "side": "adventureplus:blocks/GrindstoneSide"
+		"bottom": "adventureplus:blocks/GrindstoneBottom",
+    }
+}

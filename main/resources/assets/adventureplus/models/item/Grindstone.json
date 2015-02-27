@@ -1,5 +1,5 @@
 {
-    "parent": "adventureplus:block/Halite",
+    "parent": "adventureplus:block/Grindstone",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "adventureplus:blocks/JadeOre",
-        "front": "adventureplus:blocks/Halite",
-        "side": "adventureplus:blocks/JadeOre"
-    }
-}

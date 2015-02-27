@@ -14,6 +14,8 @@ import com.adventureplus.handler.GuiHandler;
 import com.adventureplus.lib.CommonProxy;
 import com.adventureplus.lib.References;
 import com.adventureplus.registry.*;
+import com.adventureplus.tileentity.TileEntityGrindstone;
+import com.adventureplus.tileentity.TileEntityMillstone;
 import com.adventureplus.worldgen.AdventurePlusModWorldGen;
 import com.adventureplus.creativetab.*;
 import com.adventureplus.items.*;
@@ -41,8 +43,9 @@ public class AdventurePlusMod {
 	
     //Whenever making a new GUI, do this same thing but put a number higher than the previous ID.
 	
-    public static final int guiIDMillstone = 1;
-    public static final int guiIDCutter = 2;
+    public static final int guiIDGrindstone = 1;
+    public static final int guiIDMillstone = 2;
+    public static final int guiIDCutter = 3;
     
     
 	@Instance(References.MODID)
@@ -121,7 +124,9 @@ public class AdventurePlusMod {
   	    
   		logger.info("Render Entities");
   		//Tile Entity Registry
-  		//GameRegistry.registerTileEntity(TileEntityMillstone.class, "tileEntityMillstone");
+  		GameRegistry.registerTileEntity(TileEntityMillstone.class, "tileEntityMillstone");
+  		GameRegistry.registerTileEntity(TileEntityGrindstone.class, "tileEntityGrindstone");
+  		
   		//EntityRegistry.registerModEntity(EntityGrenade.class, "Grenade", 4, this, 80, 3, true);
 
 

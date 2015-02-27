@@ -30,7 +30,9 @@ public class BlockRegistry {
 	//public static Block millstoneIdle = new Millstone(false).setUnlocalizedName("millstoneIdle").setCreativeTab(AdventurePlusMod.tabAdventurePlus).setHardness(5F);
 	//public static Block millstoneActive = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
 	
-	public static Block millstone = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);;
+	public static Block millstone = new Millstone(true).setUnlocalizedName("millstoneActive").setHardness(5F);
+	public static Block active_grindstone = new Grindstone(true);
+	public static Block grindstone = new Grindstone(false);
 	
 //	public static Block stoneCutter = new Cutter().setBlockName("stoneCutter").setCreativeTab(MillstoneMod.tabMillstone).setHardness(5F);
 
@@ -101,7 +103,7 @@ public class BlockRegistry {
 		//InteractiveBlocks
 		//GameRegistry.registerBlock(millstoneIdle, "millstoneIdle");
 		//GameRegistry.registerBlock(millstoneActive, "millstoneActive");
-		GameRegistry.registerBlock(millstone, "millstone");
+		GameRegistry.registerBlock(grindstone, "grindstone");
 		/*
 		GameRegistry.registerBlock(stoneCutter, "stoneCutter");
 		
@@ -175,7 +177,8 @@ public class BlockRegistry {
 	public static void Render(){
 		
 		//Interactive Blocks
-		registerRender(millstone);
+		registerRender(grindstone);
+		//registerRender(active_grindstone);
 		
 		//Misc
 		registerRender(lantern);

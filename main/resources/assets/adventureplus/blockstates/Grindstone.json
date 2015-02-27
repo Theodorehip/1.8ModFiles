@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "adventureplus:GrindstoneSide" },
+        "facing=south": { "model": "adventureplus:GrindstoneSide", "y": 180 },
+        "facing=west":  { "model": "adventureplus:GrindstoneSide", "y": 270 },
+        "facing=east":  { "model": "adventureplus:GrindstoneSide", "y": 90 }
+    }
+}

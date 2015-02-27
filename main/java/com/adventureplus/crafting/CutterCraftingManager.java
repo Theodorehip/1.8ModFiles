@@ -42,11 +42,6 @@ public class CutterCraftingManager
     {
         recipes = new ArrayList();
         
-        //ADD RECIPES HERE!!!
-        
-		//this.addShapelessRecipe(new ItemStack(FoodOverhaul.cheese, 1), new ItemStack(Items.milk_bucket), new ItemStack(Items.milk_bucket), new ItemStack(Items.milk_bucket, 3));
-
-		
 		this.addRecipe(new ItemStack(Blocks.stone_stairs, 4), new Object[] {"S  ","SS ", "SSS", 'S', Blocks.cobblestone});
 		this.addRecipe(new ItemStack(Blocks.stone_slab, 3), new Object[] {"   ","   ", "SSS", 'S', Blocks.stone});
 		this.addRecipe(new ItemStack(Blocks.brick_stairs, 4), new Object[] {"S  ","SS ", "SSS", 'S', Blocks.brick_block});
