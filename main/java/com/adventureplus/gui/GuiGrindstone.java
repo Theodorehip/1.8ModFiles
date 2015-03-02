@@ -33,7 +33,7 @@ public class GuiGrindstone extends GuiContainer {
 
 	public void drawGuiContainerForegroundLayer(int par1, int par2) {
 		
-		String name = this.grindstone.hasCustomName() ? this.grindstone.CustomName : I18n.format("Millstone", new Object[0]);
+		String name = this.grindstone.hasCustomName() ? this.grindstone.CustomName : I18n.format("Grindstone", new Object[0]);
 		this.fontRendererObj.drawString("Grindstone", 83 - this.fontRendererObj.getStringWidth(name) / 2, 12, 4210752);
 		this.fontRendererObj.drawString(I18n.format("container.inventory", new Object[0]), 118, this.ySize - 96 + 2, 4210752);
 	}

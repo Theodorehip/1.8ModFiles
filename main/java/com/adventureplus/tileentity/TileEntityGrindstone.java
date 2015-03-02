@@ -38,8 +38,8 @@ public class TileEntityGrindstone extends TileEntityLockable implements IUpdateP
     private static final int[] slotsSides = new int[] {1};
     private ItemStack[] ItemStacks = new ItemStack[3];
     private int BurnTime;
-    private int currentItemBurnTime;
-    private int cookTime;
+    public int currentItemBurnTime;
+    public int cookTime;
     private int totalCookTime;
     public String CustomName;
     private static final String __OBFID = "CL_00000357";
