@@ -144,13 +144,16 @@ public class ItemRegistry{
 	
 	//Plants
 	
+
+	
+	public static Item ironDust = new IronDust();
+	public static Item obsidianDust = new ObsidianDust();
 	/*
 	public static Item stoneDust = new StoneDust();
-	public static Item ironDust = new IronDust();
 	public static Item copperDust = new CopperDust();
 	public static Item silverDust = new SilverDust();
 	public static Item goldDust = new GoldDust();
-	public static Item obsidianDust = new ObsidianDust();
+
 	
 	public static Item copperIngot = new CopperIngot();
 
@@ -294,6 +297,8 @@ public class ItemRegistry{
 		registerRender(ironNugget);
 		registerRender(flax);
 		registerRender(rottenArrow);
+		registerRender(ironDust);
+		registerRender(obsidianDust);
 		
 		//Gears
 		registerRender(woodGear);

@@ -1,3 +1,4 @@
+
 package com.adventureplus.crafting;
 
 import java.util.HashMap;
