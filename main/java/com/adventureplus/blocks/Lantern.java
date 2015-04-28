@@ -26,6 +26,7 @@ public class Lantern extends Block{
         GameRegistry.registerBlock(this, "Lantern");
         this.setUnlocalizedName("Lantern");
         this.setCreativeTab(AdventurePlusMod.tabAdventurePlusDeco);
+        this.setStepSound(Block.soundTypeCloth);
 	}
 
 	/**
