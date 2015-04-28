@@ -211,3 +211,39 @@ item.coloredBed.orange.name=Orange Bed
 item.coloredBed.white.name=White Bed
 
 
+tile.stained_glass.name=Stained Glass
+tile.stained_glass.black.name=Black Stained Glass
+tile.stained_glass.red.name=Red Stained Glass
+tile.stained_glass.green.name=Green Stained Glass
+tile.stained_glass.brown.name=Brown Stained Glass
+tile.stained_glass.blue.name=Blue Stained Glass
+tile.stained_glass.purple.name=Purple Stained Glass
+tile.stained_glass.cyan.name=Cyan Stained Glass
+tile.stained_glass.silver.name=Light Gray Stained Glass
+tile.stained_glass.gray.name=Gray Stained Glass
+tile.stained_glass.pink.name=Pink Stained Glass
+tile.stained_glass.lime.name=Lime Stained Glass
+tile.stained_glass.yellow.name=Yellow Stained Glass
+tile.stained_glass.lightBlue.name=Light Blue Stained Glass
+tile.stained_glass.magenta.name=Magenta Stained Glass
+tile.stained_glass.orange.name=Orange Stained Glass
+tile.stained_glass.white.name=White Stained Glass
+tile.stained_glass_pane.name=Stained Glass Pane
+tile.stained_glass_pane.black.name=Black Stained Glass Pane
+tile.stained_glass_pane.red.name=Red Stained Glass Pane
+tile.stained_glass_pane.green.name=Green Stained Glass Pane
+tile.stained_glass_pane.brown.name=Brown Stained Glass Pane
+tile.stained_glass_pane.blue.name=Blue Stained Glass Pane
+tile.stained_glass_pane.purple.name=Purple Stained Glass Pane
+tile.stained_glass_pane.cyan.name=Cyan Stained Glass Pane
+tile.stained_glass_pane.silver.name=Light Gray Stained Glass Pane
+tile.stained_glass_pane.gray.name=Gray Stained Glass Pane
+tile.stained_glass_pane.pink.name=Pink Stained Glass Pane
+tile.stained_glass_pane.lime.name=Lime Stained Glass Pane
+tile.stained_glass_pane.yellow.name=Yellow Stained Glass Pane
+tile.stained_glass_pane.lightBlue.name=Light Blue Stained Glass Pane
+tile.stained_glass_pane.magenta.name=Magenta Stained Glass Pane
+tile.stained_glass_pane.orange.name=Orange Stained Glass Pane
+tile.stained_glass_pane.white.name=White Stained Glass Pane
+
+

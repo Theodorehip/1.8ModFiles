@@ -1,22 +1,28 @@
 package com.adventureplus.registry;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockBreakable;
+import net.minecraft.block.BlockPane;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.adventureplus.AdventurePlusMod;
-import com.adventureplus.blocks.*;
-import com.adventureplus.blocks.ores.*;
+import com.adventureplus.blocks.Grindstone;
+import com.adventureplus.blocks.Lantern;
+import com.adventureplus.blocks.Millstone;
+import com.adventureplus.blocks.StainedGlass;
+import com.adventureplus.blocks.StainedGlassPane;
+import com.adventureplus.blocks.ores.CopperOre;
+import com.adventureplus.blocks.ores.Halite;
+import com.adventureplus.blocks.ores.Jade;
+import com.adventureplus.blocks.ores.NetherRubyOre;
+import com.adventureplus.blocks.ores.SapphireOre;
+import com.adventureplus.blocks.ores.SilverOre;
 import com.adventureplus.lib.References;
 //import com.millstone.trees.*;
-
-
-
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockRegistry {
 
@@ -98,6 +104,9 @@ public class BlockRegistry {
 	public static Block[] coloredBeds;
 	
 	*/
+	public static BlockBreakable stained_glass = new StainedGlass(Material.glass);
+	public static BlockPane stained_glass_pane = new StainedGlassPane();
+	
 	public static void Register() {
 		
 		//InteractiveBlocks
@@ -170,6 +179,8 @@ public class BlockRegistry {
 		}
 				
 		*/
+		GameRegistry.registerBlock(stained_glass, "stained_glass");
+		GameRegistry.registerBlock(stained_glass_pane, "stained_glass_pane");
 		
 	}
     
@@ -182,6 +193,11 @@ public class BlockRegistry {
 		
 		//Misc
 		registerRender(lantern);
+		
+		//Decorative
+		registerRender(stained_glass);
+		registerRender(stained_glass_pane);
+
 		
 		//Ores
 		registerRender(netherRubyOre);

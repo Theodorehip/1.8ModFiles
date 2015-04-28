@@ -1,10 +1,10 @@
-itemGroup.tabMillstone=Millstone
-itemGroup.tabMillstoneTools=Outils Millstone 
-itemGroup.tabMillstoneArmor=Armures Millstone 
-itemGroup.tabMillstoneMaterials=Matériaux Millstone 
-itemGroup.tabMillstoneFood=Nouriture Millstone 
-itemGroup.tabMillstoneMisc=Millstone Autres
-itemGroup.tabMillstoneDeco=Décorations Millstone
+itemGroup.tabMillstone=Aventure+
+itemGroup.tabMillstoneTools=Aventure+ Outils 
+itemGroup.tabMillstoneArmor=Aventure+ Armures 
+itemGroup.tabMillstoneMaterials=Aventure+ Matériaux
+itemGroup.tabMillstoneFood=Aventure+ Nourriture
+itemGroup.tabMillstoneMisc=Aventure+ Autres
+itemGroup.tabMillstoneDeco=Aventure+ Décorations
 
 entity.Scarecrow.name=Epouvantail
 entity.Boar.name=Sanglier

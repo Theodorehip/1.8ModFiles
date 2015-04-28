@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_nse",
+    "textures": {
+        "edge": "adventureplus:blocks/glass_pane_top_cyan",
+        "pane": "adventureplus:blocks/glass_cyan"
+    }
+}

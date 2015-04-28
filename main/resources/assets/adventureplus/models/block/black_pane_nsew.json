@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_nsew",
+    "textures": {
+        "edge": "adventureplus:blocks/glass_pane_top_black",
+        "pane": "adventureplus:blocks/glass_black"
+    }
+}
